@@ -1,0 +1,45 @@
+.anuncio {
+    color: black;
+    font-size: 500%;
+    font-style: italic;
+    border: solid 5px greenyellow;
+    font-family: Arial;
+    background-image: linear-gradient(to right, rgb(170, 100, 100), white);
+    margin-top: 100px;
+}
+
+
+
+@mixin style-announcement {
+    text-align: center;
+    line-height: 5.5;
+}
+
+.Pipp {
+    @include style-announcement()
+}
+
+
+
+$fuentes:(light:40px,
+    medium:600%,
+    big:200px,
+);
+
+
+.cont {
+    color: brown;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: map-get($fuentes, medium);
+}
+
+.distintaspizas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
